@@ -73,7 +73,7 @@ def pl_read(kb, file):
         i = re.sub(r'\.+$', "", i)
         facts.append(i)
     kb(facts)
-    print(f"facts and rules have been added to {kb.name}.db")
+    print("facts and rules have been added to {}.db".format(kb.name))
 
 
 def rh_val_get(rh_arg, lh_arg, rh_domain):
